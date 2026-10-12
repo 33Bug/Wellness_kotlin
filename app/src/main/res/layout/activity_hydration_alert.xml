@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#448AFF"
+    android:padding="15dp"
+    tools:context=".HydrationAlert">
+
+    <!-- page title-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hydration Alert"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- hydration image-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img3"
+        android:scaleType="fitCenter"
+        android:layout_margin="10dp"
+        android:contentDescription="hydration alert image"/>
+
+    <!-- current water intake-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Todays water intake"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6 / 8 Glasses"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+    <!-- hydration progress-->
+    <ProgressBar
+        android:id="@+id/hydration_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="8"
+        android:progress="6"
+        android:layout_margin="10dp"/>
+
+<!--    Daily target-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily water target: 8 glasses"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"/>
+    
+    <SeekBar
+        android:id="@+id/water_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="12"
+        android:progress="8"
+        android:layout_margin="10dp"/>
+
+<!--    reminder switch-->
+    <Switch
+        android:id="@+id/hydration_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Hydration Reminders"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:padding="10dp"/>
+
+<!--    goal checkbox-->
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I have reached my daily water goal"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:textSize="10sp"/>
+<!--    add water button-->
+    <Button
+        android:id="@+id/add_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add glass of water"
+        android:backgroundTint="#2E0E08"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+<!--    Hydration tip-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tip:Drink water regularly through out the day"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>

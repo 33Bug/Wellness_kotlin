@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#448AFF"
+        android:padding="20dp"
+        tools:context=".WeeklyGoals">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weekly Goals"
+            android:textSize="30sp"
+            android:padding="15dp"
+            android:textColor="#4F1309"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img2"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weekly target:7 goals.A minimum of 6 should be achieved in order to progress forward"
+            android:textSize="20sp"
+            android:textColor="#4F1309"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"/>
+
+
+
+        <Switch
+            android:id="@+id/weekly_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Goal Reminders"
+            android:textSize="20sp"
+            android:textColor="#45150D"
+            android:padding="10dp"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I have achieved my weekly goals"
+            android:textColor="#45150d"
+            android:padding="10dp"
+            android:textSize="10sp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_goals"
+            android:text="Add more goals"
+            android:backgroundTint="#2E0E08"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tip:Make sure you achieve all weekly goals by the end of the week"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="#45150D"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

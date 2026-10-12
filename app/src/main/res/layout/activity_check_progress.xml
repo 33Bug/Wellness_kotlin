@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckProgress">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Progress"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:textColor="#536DFE"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img7"
+        android:scaleType="centerCrop"/>
+    <ProgressBar
+        android:id="@+id/check_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="8"
+        android:progress="6"
+        android:layout_margin="10dp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I have reached all my targets so far"
+        android:textColor="#45150D"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/progress_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Progress"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#57291F"
+        android:padding="15dp"
+        tools:context=".StartExercise">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Exercise"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img4"
+        android:scaleType="fitCenter"
+        android:layout_margin="10dp"
+        android:contentDescription="Start exercise image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start exercise\n
+        1. Walk daily for 15 minutes.\n
+        2. Do bodyweight squats during commercial breaks.\n
+        3. Stretch every morning for 5 minutes.\n
+        4. Take the stairs instead of the elevator.\n
+        5. Follow a 10-minute beginner workout video online.\n
+        6. Park further away from store entrances.\n
+        7. Perform wall push-ups while waiting for coffee.\n
+        8. Pace while talking on the phone.\n"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_margin="10dp"/>
+
+
+
+    <Button
+        android:id="@+id/exercise_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Exercise"
+        android:layout_margin="30dp"/>
+
+
+
+</LinearLayout>
+</ScrollView>

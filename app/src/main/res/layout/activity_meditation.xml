@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Meditation">
+
+
+    <TextView
+        android:id="@+id/meditation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meditation"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:textColor="#D1592E"/>
+
+    <TextView
+        android:id="@+id/meditation_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meditating helps relax the mind and body.It is mostly used by doctors as therapy for their patients.Meditation is sometimes used for yoga"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/Relax_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watch and Relax"
+        android:layout_margin="30dp"/>
+
+
+
+
+
+</LinearLayout>
